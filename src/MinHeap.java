@@ -15,7 +15,7 @@ public class MinHeap {
 	
 	private void buildHeap(List<Integer> array) {
 		heap = array;
-		for(int i = parent(heap.size() - 1); i >=0; i-- ) {
+		for(int i = parent(heap.size() - 1); i >= 0; i-- ) {
 			shiftDown(i);
 		}
 		
@@ -67,7 +67,7 @@ public class MinHeap {
 	}
 	
 	private int parent(int i) {
-		return (i-1)/2;
+		return (i-1) / 2;
 	}
 	
 	private int leftChild(int i) {
